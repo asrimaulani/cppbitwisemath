@@ -13,6 +13,6 @@ int AddTwoNumbers(int x, int y)
 
 int SubTwoNumbers(int x, int y)
 {
-    unsigned yTwosComplement = ~y + 1;
+    int yTwosComplement{AddTwoNumbers(~y, 1)};
     return AddTwoNumbers(x, yTwosComplement);
 }
